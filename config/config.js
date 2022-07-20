@@ -10,7 +10,6 @@ switch (process.env.NODE_ENV) {
   case "local":
     port = process.env.LOCAL_PORT;
     mongodbUri = process.env.LOCAL_MONGODB_URI;
-
     break;
 
   case "staging":

@@ -32,6 +32,23 @@ const app = express();
 //     .catch((err) => res.status(500).json(err));
 // }
 
+// Product.find({
+//   _id: "62d2c23057434cce6af8d055",
+// })
+//   .then((ps) => {
+//     return ps.map((p) => {
+//       (p.SizeAndStock = {
+//         28: 19,
+//         29: 12,
+//         30: 1,
+//         31: 0,
+//       }),
+//         p.save();
+//       return p;
+//     });
+//   })
+//   .catch((err) => console.log(err));
+
 app.use(express.json());
 app.use(cors());
 app.use("/api", require("./routes"));
