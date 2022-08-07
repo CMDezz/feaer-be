@@ -8,5 +8,6 @@ router.use("/collection", require("./Collection"));
 router.use("/sex", require("./Sex"));
 router.use("/tag", require("./Tag"));
 router.use("/discount", require("./Discount"));
+router.use("/order", require("./Order"));
 
 module.exports = router;
